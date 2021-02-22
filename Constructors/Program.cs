@@ -6,13 +6,13 @@ namespace Constructors
     {
         static void Main(string[] args)
         {
-            //CustomerManager customerManager = new CustomerManager(20);
-            //customerManager.List();
+            CustomerManager customerManager = new CustomerManager(20);
+            customerManager.List();
 
-            //Product product1 = new Product{Id=1,Name="Computer" };
-            //Console.WriteLine(product1.Name);
+            Product product1 = new Product { Id = 1, Name = "Computer" };
+            Console.WriteLine(product1.Name);
 
-            //Product product = new Product(2,"Bilgisayar");
+            Product product = new Product(2, "Bilgisayar");
 
 
             EmployeeManager employeeManager = new EmployeeManager(new DatabaseLogger());
@@ -21,6 +21,8 @@ namespace Constructors
             PersonManager personManager = new PersonManager("Product");
             personManager.Add();
             Console.ReadLine();
+
+
         }
     }
     //class'ın ihtiyac duydugu parametreler varsa bu parametreyi constructor sayesinde set ederiz
